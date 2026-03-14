@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gosi-gear.vercel.app/sitemap.xml
