@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[리뷰] 고시생 귀마개의 종착역, 몰덱스 — 착용감과 차음 사이에서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#faf9f6;--bg-warm:#f3f0e8;--bg-dark:#1c1c1e;--text-body:#2c2c2e;--text-secondary:#636366;--text-caption:#8e8e93;--text-light:#aeaeb2;--accent:#b08d3e;--accent-soft:#f5edd6;--border:#e5e5e7;--border-light:#f0efec;--coupang:#ae0000;--coupang-hover:#8a0000;--gold:#b08d3e;--highlight-bg:#fef9f0}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:17px}
+  body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text-body);-webkit-font-smoothing:antialiased;line-height:1.8}
+
+  /* ── 광고 표시 ── */
+  .ad-disclosure-top{background:var(--bg-dark);color:#aaa;text-align:center;padding:10px 20px;font-size:12px;line-height:1.6}.ad-disclosure-top strong{color:#f5c518;font-weight:600}
+
+  /* ── 헤더 ── */
+  .article-header{max-width:720px;margin:0 auto;padding:64px 24px 40px;text-align:center}
+  .article-category{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+  .article-title{font-family:'Noto Serif KR',serif;font-size:clamp(26px,5vw,38px);font-weight:900;line-height:1.4;margin-bottom:18px;word-break:keep-all}
+  .article-excerpt{font-size:16px;color:var(--text-secondary);line-height:1.75;font-weight:300;max-width:560px;margin:0 auto 28px;word-break:keep-all}
+  .article-meta{display:flex;align-items:center;justify-content:center;gap:16px;font-size:13px;color:var(--text-caption)}
+  .meta-divider{width:1px;height:14px;background:var(--border)}
+
+  /* ── 히어로 ── */
+  .hero-image{max-width:900px;margin:0 auto;padding:0 24px}
+  .hero-image-inner{width:100%;aspect-ratio:16/7;background:linear-gradient(135deg,#2d2418,#4a3728 50%,#3d2e1f);border-radius:6px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .hero-image-inner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(176,141,62,.15) 0%,transparent 60%)}
+  .hero-image-text{position:relative;z-index:2;text-align:center;color:#fff}
+  .hero-image-text h2{font-family:'Libre Baskerville',serif;font-size:clamp(32px,6vw,56px);font-weight:700;font-style:italic;opacity:.9}
+  .hero-image-text p{font-size:13px;color:rgba(255,255,255,.45);margin-top:8px;letter-spacing:.2em;text-transform:uppercase}
+
+  /* ── 본문 ── */
+  .article-body{max-width:680px;margin:0 auto;padding:48px 24px 80px}
+  .article-body p{font-size:16px;line-height:2;margin-bottom:28px;word-break:keep-all}
+  .article-body h2{font-family:'Noto Serif KR',serif;font-size:24px;font-weight:700;margin:56px 0 20px;line-height:1.45;word-break:keep-all}
+  .article-body h3{font-size:18px;font-weight:700;margin:40px 0 14px}
+  .article-body strong{font-weight:600}
+  .drop-cap::first-letter{font-family:'Libre Baskerville',serif;float:left;font-size:3.6em;line-height:.85;margin:4px 12px 0 0;color:var(--accent);font-weight:700}
+  .article-body blockquote{margin:36px 0;padding:24px 28px;border-left:3px solid var(--gold);background:var(--highlight-bg);border-radius:0 4px 4px 0;font-size:15px;line-height:1.85;color:var(--text-secondary);font-style:italic}.article-body blockquote strong{font-style:normal;color:var(--text-body)}
+
+  /* ── SVG 인포그래픽 ── */
+  .illustration{margin:40px 0;border-radius:6px;overflow:hidden}.illustration svg{width:100%;display:block}.illustration figcaption{font-size:13px;color:var(--text-caption);text-align:center;margin-top:10px;font-weight:300}
+
+  /* ══════════════════════════════════════════
+     ★ 개선된 CTA — 인라인 카드 (이미지 확대)
+     ══════════════════════════════════════════ */
+  .product-cta{margin:44px 0;background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:box-shadow .3s}.product-cta:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
+  .product-cta-inner{display:flex;align-items:center;gap:24px;padding:24px}
+  .product-cta-img{width:200px;height:200px;flex-shrink:0;border-radius:6px;overflow:hidden;background:var(--bg-warm);display:flex;align-items:center;justify-content:center}
+  .product-cta-img img{width:100%;height:100%;object-fit:contain}
+  .img-placeholder{font-size:11px;color:var(--text-light);text-align:center;padding:8px;line-height:1.4}
+  .product-cta-info{flex:1}.product-cta-badge{font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.05em;margin-bottom:6px}
+  .product-cta-name{font-size:17px;font-weight:700;margin-bottom:6px;line-height:1.4}.product-cta-desc{font-size:13.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px}
+  .product-cta-action{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .btn-coupang{display:inline-flex;align-items:center;gap:6px;background:var(--coupang);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:12px 24px;border-radius:4px;transition:all .25s;white-space:nowrap}
+  .btn-coupang:hover{background:var(--coupang-hover);transform:translateY(-1px);box-shadow:0 4px 12px rgba(174,0,0,.2)}
+  .cta-sub{font-size:11px;color:var(--text-light)}
+
+  @media(max-width:600px){
+    .product-cta-inner{flex-direction:column;text-align:center}
+    .product-cta-img{width:100%;height:220px}
+    .product-cta-action{justify-content:center}
+  }
+
+  /* ── 비교표 ── */
+  .mini-table{margin:36px 0;overflow-x:auto}.mini-table table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+  .mini-table thead th{background:var(--bg-warm);padding:12px 16px;text-align:left;font-weight:600;font-size:13px;color:var(--text-secondary);border-bottom:2px solid var(--border)}
+  .mini-table tbody td{padding:12px 16px;border-bottom:1px solid var(--border-light);color:var(--text-secondary)}.mini-table tbody tr:hover td{background:#faf9f6}.mini-table .pick td{color:var(--accent);font-weight:600}
+
+  /* ── 장단점 ── */
+  .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:40px 0}@media(max-width:560px){.pros-cons{grid-template-columns:1fr}}
+  .pros-cons>div{padding:24px;border-radius:6px}.pros-box{background:#f0f8f0;border:1px solid #d4e8d4}.cons-box{background:#fdf2f0;border:1px solid #f0d4d0}
+  .pros-cons h5{font-size:13px;font-weight:700;margin-bottom:12px;letter-spacing:.06em}.pros-box h5{color:#2d7a2d}.cons-box h5{color:#b33}
+  .pros-cons ul{list-style:none;font-size:14px;line-height:1.85;color:var(--text-secondary)}.pros-cons ul li{padding-left:20px;position:relative;margin-bottom:4px}
+  .pros-box ul li::before{content:'✓';position:absolute;left:0;color:#2d7a2d;font-weight:700}.cons-box ul li::before{content:'✕';position:absolute;left:0;color:#b33;font-weight:700}
+
+  /* ── 구분선 ── */
+  .sep{text-align:center;margin:48px 0;color:var(--text-light);font-size:18px;letter-spacing:.5em}
+
+  /* ── 팁 박스 ── */
+  .tip-box{margin:40px 0;background:var(--accent-soft);border:1px solid #e8dbb8;border-radius:8px;padding:24px 28px}
+  .tip-box h4{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:12px}.tip-box p{font-size:14px;line-height:1.85;color:var(--text-secondary);margin-bottom:0}
+  .tip-box ul{list-style:none;font-size:14px;line-height:1.85;color:var(--text-secondary);margin-top:8px}.tip-box ul li{padding-left:20px;position:relative;margin-bottom:4px}.tip-box ul li::before{content:'→';position:absolute;left:0;color:var(--accent)}
+
+  /* ── 결론 배너 ── */
+  .verdict-banner{margin:56px 0 40px;background:linear-gradient(135deg,var(--bg-dark),#2c2c30);border-radius:8px;padding:40px 32px;text-align:center;color:#fff}
+  .verdict-banner h3{font-family:'Noto Serif KR',serif;font-size:22px;font-weight:700;margin-bottom:12px;color:#fff}
+  .verdict-banner p{font-size:15px!important;color:rgba(255,255,255,.65)!important;margin-bottom:24px!important;line-height:1.8}
+  .verdict-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.verdict-buttons .btn-coupang{padding:12px 28px;font-size:14px}
+  .btn-outline{background:transparent!important;border:1px solid rgba(255,255,255,.25);color:#fff!important}.btn-outline:hover{background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.45);box-shadow:none!important}
+
+  /* ── 하단 고지 ── */
+  .footer-area{max-width:680px;margin:0 auto;padding:0 24px 60px}
+  .footer-disclosure-box{background:var(--bg-warm);border:1px solid var(--border);border-radius:6px;padding:20px 24px;font-size:12px;color:var(--text-caption);line-height:1.8}.footer-disclosure-box strong{color:var(--text-secondary)}
+</style>
+</head>
+<body>
+<div class="ad-disclosure-top"><strong>[광고]</strong> 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+
+<header class="article-header">
+  <span class="article-category">학습 환경 리뷰</span>
+  <h1 class="article-title">고시생 귀마개의 종착역,<br>몰덱스 — 착용감과 차음 사이에서</h1>
+  <p class="article-excerpt">귀마개에만 20만원 쓴 수험생들이 결국 도착하는 곳. 몰덱스 라인업을 직접 비교하고, 귀 크기·사용 환경별 선택 가이드를 정리했습니다.</p>
+  <div class="article-meta"><time>2026. 3. 14</time><span class="meta-divider"></span><span>읽는 시간 약 8분</span></div>
+</header>
+
+<figure class="hero-image"><div class="hero-image-inner"><div class="hero-image-text"><h2>Silence</h2><p>Moldex Ear Plugs — Focus Deeper</p></div></div></figure>
+
+<article class="article-body">
+  <p class="drop-cap">독서실에 앉아 있으면 놀라울 정도로 많은 소리가 들립니다. 옆자리 키보드 소리, 누군가의 코 훌쩍임, 에어컨 윙윙거림, 멀리서 들리는 문 닫히는 소리. 한 가지만이면 참을 수 있지만, 이 모든 것이 쌓이면 집중력은 조금씩 깎여 나갑니다. 그래서 수험생에게 귀마개는 볼펜만큼이나 중요한 학습 도구입니다.</p>
+
+  <p>수험생 커뮤니티에서 귀마개를 검색하면 빠짐없이 등장하는 이름이 있습니다. <strong>몰덱스(Moldex)</strong>. 독일 본사를 둔 청력보호구 전문 기업으로, 산업 현장부터 수험생 책상까지 폭넓게 쓰이는 폼 귀마개를 만듭니다.</p>
+
+  <blockquote><strong>오르비, 고시 커뮤니티에서 "귀마개에만 20만원 쓴 사람"의 후기가 화제가 된 적이 있습니다.</strong> 다양한 브랜드를 시도한 끝에 결국 돌아오는 곳이 몰덱스라는 결론이었습니다. 중요한 건, 몰덱스 안에서도 모델마다 성격이 완전히 다르다는 점입니다.</blockquote>
+
+  <div class="sep">· · ·</div>
+
+  <h2>먼저 알아야 할 것 — 차음률(NRR)이란?</h2>
+  <p>귀마개의 성능을 나타내는 지표가 <strong>NRR(Noise Reduction Rating)</strong>입니다. 단위는 dB(데시벨)이며, 이 수치만큼 주변 소음을 줄여준다고 이해하면 됩니다. 시중 폼 귀마개는 보통 NRR 25~33dB 범위에 있습니다.</p>
+  <p>다만 착용 방법에 따라 실제 차음 효과는 크게 달라집니다. 제조사 공칭 NRR은 이상적 착용 조건에서 측정한 것이라, 올바르게 착용하지 않으면 절반 이하로 떨어질 수 있습니다. 따라서 <strong>NRR 수치 자체보다 제대로 착용할 수 있는 제품을 고르는 것이 더 중요합니다.</strong></p>
+
+  <!-- ══ SVG 인포그래픽: 소음 레벨 비교 ══ -->
+  <figure class="illustration">
+    <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="680" height="220" fill="#faf9f6" rx="4"/>
+      <text x="340" y="28" text-anchor="middle" font-family="Noto Sans KR" font-size="13" font-weight="600" fill="#636366">일상 소음 레벨과 귀마개 효과</text>
+      <!-- 바 차트 -->
+      <g transform="translate(40,50)">
+        <rect x="0" y="0" width="120" height="36" rx="4" fill="#e8e4dc"/><text x="10" y="23" font-family="Noto Sans KR" font-size="11" fill="#636366">조용한 도서관</text><text x="130" y="23" font-family="Noto Sans KR" font-size="11" fill="#8e8e93">30dB</text>
+        <rect x="0" y="46" width="220" height="36" rx="4" fill="#e2d9c5"/><text x="10" y="69" font-family="Noto Sans KR" font-size="11" fill="#636366">독서실 (타자·뒤척임)</text><text x="230" y="69" font-family="Noto Sans KR" font-size="11" fill="#8e8e93">45–55dB</text>
+        <rect x="0" y="92" width="340" height="36" rx="4" fill="#d4c5a0"/><text x="10" y="115" font-family="Noto Sans KR" font-size="11" fill="#636366">카페·스터디카페</text><text x="350" y="115" font-family="Noto Sans KR" font-size="11" fill="#8e8e93">60–70dB</text>
+        <rect x="0" y="138" width="160" height="24" rx="4" fill="#b08d3e" opacity=".3"/><text x="10" y="155" font-family="Noto Sans KR" font-size="10.5" fill="#b08d3e" font-weight="600">NRR 29 착용 시 → 약 21dB 감소</text>
+        <rect x="0" y="150" width="600" height="2" fill="none" stroke="#e5e5e7" stroke-dasharray="4,4"/>
+      </g>
+      <text x="340" y="210" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#aeaeb2">NRR 29~33dB 귀마개 착용 시, 독서실 소음은 조용한 도서관 수준으로 감소합니다</text>
+    </svg>
+    <figcaption>실제 체감 차음은 착용 상태에 따라 다를 수 있습니다</figcaption>
+  </figure>
+
+  <h2>폼 귀마개의 재질 — PVC vs PU(폴리우레탄)</h2>
+  <p>폼 귀마개는 크게 두 가지 재질로 나뉩니다. <strong>PVC(폴리염화비닐)</strong>는 복원 속도가 빠르고 단단한 편이어서 차음이 잘 되지만, 오래 끼면 귀가 눌리는 느낌이 강합니다. <strong>PU(폴리우레탄)</strong>는 느리게 팽창하며 부드럽게 귓속에 밀착되어 착용감이 좋습니다.</p>
+  <p>수험생처럼 하루 6~10시간 이상 착용하는 경우, PU 재질이 압도적으로 유리합니다. 몰덱스의 인기 모델 대부분이 PU 재질인 이유이기도 합니다.</p>
+
+  <div class="sep">· · ·</div>
+
+  <h2>몰덱스 라인업 비교 — 어떤 모델을 골라야 할까?</h2>
+  <p>몰덱스 귀마개는 종류가 다양하지만, 수험생에게 의미 있는 모델은 네 가지입니다. 각각 성격이 뚜렷하게 다르니 자신의 귀 크기와 사용 환경에 맞춰 선택하세요.</p>
+
+  <div class="mini-table"><table><thead><tr><th>모델</th><th>NRR</th><th>크기</th><th>재질</th><th>착용감</th><th>차음</th></tr></thead><tbody>
+    <tr class="pick"><td><strong>슬림핏 ★</strong></td><td>29dB</td><td>작음</td><td>PU</td><td>매우 좋음</td><td>보통</td></tr>
+    <tr><td><strong>울트라소프트</strong></td><td>33dB</td><td>큼</td><td>PU</td><td>좋음</td><td>좋음</td></tr>
+    <tr><td><strong>스파크플러그</strong></td><td>33dB</td><td>보통</td><td>PU</td><td>보통</td><td>매우 좋음</td></tr>
+    <tr><td><strong>퓨라핏</strong></td><td>33dB</td><td>큼</td><td>PU</td><td>좋음</td><td>좋음</td></tr>
+  </tbody></table></div>
+
+  <h3>① 몰덱스 슬림핏 — "입문자 추천, 귀 작은 사람의 구세주"</h3>
+  <p>몰덱스 라인업 중 가장 작은 모델입니다. 귀가 작은 편이라면 다른 건 볼 필요 없이 이것부터 시도하세요. PU 재질이라 부드럽고, 크기가 작아서 장시간 착용해도 압박감이 적습니다. NRR 29dB로 수치상으로는 라인업 중 가장 낮지만, 독서실이나 시험장 수준의 소음이라면 충분합니다.</p>
+
+  <!-- ★★★ CTA 1: 슬림핏 (인라인 카드 200px) ★★★ -->
+  <div class="product-cta">
+    <div class="product-cta-inner">
+      <div class="product-cta-img">
+        <img src="YOUR_COUPANG_IMAGE_URL_1" alt="몰덱스 슬림핏 귀마개" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="img-placeholder" style="display:none">쿠팡 상품<br>이미지</span>
+      </div>
+      <div class="product-cta-info">
+        <p class="product-cta-badge">Editor's Pick · 입문용 추천</p>
+        <h4 class="product-cta-name">몰덱스 슬림핏 귀마개 (NRR 29)</h4>
+        <p class="product-cta-desc">몰덱스 라인업 중 가장 작고 부드러운 모델. 귀가 작은 수험생이나 귀마개를 처음 써보는 분에게 적합합니다. 소모품이므로 다량 구매를 추천합니다.</p>
+        <div class="product-cta-action">
+          <a href="YOUR_COUPANG_PARTNERS_LINK_1" class="btn-coupang" target="_blank" rel="noopener noreferrer">쿠팡 최저가 확인 →</a>
+          <span class="cta-sub">로켓배송 가능 상품</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>② 몰덱스 울트라소프트 — "장시간 착용의 정석"</h3>
+  <p>폼 귀마개 중 가장 부드러운 재질 중 하나입니다. 크기는 큰 편이지만 체온에 의해 귓속에서 천천히 형태를 잡기 때문에, 꽉 찬 느낌이 적고 편안합니다. NRR 33dB로 차음도 좋아서 하루 종일 착용해야 하는 장기 수험생에게 인기가 높습니다.</p>
+
+  <!-- ★★★ 인라인 CTA (이미지 200px로 확대) ★★★ -->
+  <div class="product-cta">
+    <div class="product-cta-inner">
+      <div class="product-cta-img">
+        <img src="YOUR_COUPANG_IMAGE_URL_2" alt="몰덱스 울트라소프트 귀마개" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="img-placeholder" style="display:none">쿠팡 상품<br>이미지</span>
+      </div>
+      <div class="product-cta-info">
+        <p class="product-cta-badge">장시간 착용 추천</p>
+        <h4 class="product-cta-name">몰덱스 울트라소프트 귀마개 (NRR 33)</h4>
+        <p class="product-cta-desc">가장 부드러운 PU 재질. 체온으로 천천히 팽창하여 귀에 자연스럽게 밀착. 하루 8시간 이상 착용하는 수험생에게 적합합니다.</p>
+        <div class="product-cta-action">
+          <a href="YOUR_COUPANG_PARTNERS_LINK_2" class="btn-coupang" target="_blank" rel="noopener noreferrer">쿠팡 최저가 확인 →</a>
+          <span class="cta-sub">로켓배송 가능 상품</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>③ 몰덱스 스파크플러그 — "차음이 생명"</h3>
+  <p>차음 성능이 가장 우선이라면 스파크플러그입니다. NRR 33dB에 밀착력이 좋아서 독서실에서도 거의 아무 소리가 들리지 않는 수준까지 차단됩니다. 다만 착용감은 슬림핏이나 울트라소프트에 비해 다소 단단한 편이어서, 귀가 작은 분에게는 30분 이상 끼면 불편할 수 있습니다. 귀가 보통 이상인 분이라면 차음 대비 착용감이 괜찮다는 평가가 많습니다.</p>
+
+  <div class="product-cta">
+    <div class="product-cta-inner">
+      <div class="product-cta-img">
+        <img src="YOUR_COUPANG_IMAGE_URL_3" alt="몰덱스 스파크플러그 귀마개" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="img-placeholder" style="display:none">쿠팡 상품<br>이미지</span>
+      </div>
+      <div class="product-cta-info">
+        <p class="product-cta-badge">차음 성능 우선</p>
+        <h4 class="product-cta-name">몰덱스 스파크플러그 귀마개 (NRR 33)</h4>
+        <p class="product-cta-desc">높은 밀착력으로 차음 성능이 우수. 주변 소음이 많은 환경에서 공부하거나, 확실한 차단이 필요한 분에게 추천합니다.</p>
+        <div class="product-cta-action">
+          <a href="YOUR_COUPANG_PARTNERS_LINK_3" class="btn-coupang" target="_blank" rel="noopener noreferrer">쿠팡 최저가 확인 →</a>
+          <span class="cta-sub">로켓배송 가능 상품</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>④ 3M 이어소프트 — "가성비 대량 구매용"</h3>
+  <p>몰덱스만 정답은 아닙니다. 3M 이어소프트(EAR Classic / 1100)도 독서실에서 꾸준히 쓰이는 제품입니다. NRR 29dB로 무난한 차음에 낱개 가격이 저렴해서, 처음 여러 종류를 시험해 볼 때 함께 구매하기 좋습니다. 다만 재질이 PVC 계열이라 장시간 착용 시 압박감이 몰덱스 PU 제품보다 강한 편입니다.</p>
+
+  <div class="product-cta">
+    <div class="product-cta-inner">
+      <div class="product-cta-img">
+        <img src="YOUR_COUPANG_IMAGE_URL_4" alt="3M 이어소프트 귀마개" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="img-placeholder" style="display:none">쿠팡 상품<br>이미지</span>
+      </div>
+      <div class="product-cta-info">
+        <p class="product-cta-badge">가성비 · 입문 시험용</p>
+        <h4 class="product-cta-name">3M 귀마개 이어소프트 (NRR 29)</h4>
+        <p class="product-cta-desc">국내에서 가장 쉽게 구할 수 있는 귀마개. 낱개 가격이 저렴하여 여러 제품을 비교 테스트할 때 함께 구매하기 좋습니다.</p>
+        <div class="product-cta-action">
+          <a href="YOUR_COUPANG_PARTNERS_LINK_4" class="btn-coupang" target="_blank" rel="noopener noreferrer">쿠팡 최저가 확인 →</a>
+          <span class="cta-sub">로켓배송 가능 상품</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep">· · ·</div>
+
+  <h2>올바른 착용법 — 차음의 80%는 착용에서 결정됩니다</h2>
+  <p>같은 귀마개를 써도 착용 방법에 따라 차음 효과가 두 배 이상 차이 날 수 있습니다. 폼 귀마개의 올바른 착용 순서는 다음과 같습니다.</p>
+
+  <!-- ══ SVG 인포그래픽: 착용법 ══ -->
+  <figure class="illustration">
+    <svg viewBox="0 0 680 180" xmlns="http://www.w3.org/2000/svg">
+      <rect width="680" height="180" fill="#faf9f6" rx="4"/>
+      <text x="340" y="28" text-anchor="middle" font-family="Noto Sans KR" font-size="13" font-weight="600" fill="#636366">폼 귀마개 올바른 착용 3단계</text>
+      <!-- Step 1 -->
+      <g transform="translate(50,50)">
+        <circle cx="50" cy="40" r="36" fill="#f5edd6" stroke="#b08d3e" stroke-width="1.5"/>
+        <text x="50" y="36" text-anchor="middle" font-family="Libre Baskerville" font-size="28" font-weight="700" fill="#b08d3e">1</text>
+        <text x="50" y="54" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#8e8e93">ROLL</text>
+        <text x="50" y="100" text-anchor="middle" font-family="Noto Sans KR" font-size="12" font-weight="600" fill="#2c2c2e">얇게 말기</text>
+        <text x="50" y="118" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">엄지·검지로 가늘게</text>
+        <text x="50" y="132" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">원통형으로 말아줍니다</text>
+      </g>
+      <!-- Arrow -->
+      <text x="225" y="92" font-family="Noto Sans KR" font-size="20" fill="#d4d4d4">→</text>
+      <!-- Step 2 -->
+      <g transform="translate(265,50)">
+        <circle cx="50" cy="40" r="36" fill="#f5edd6" stroke="#b08d3e" stroke-width="1.5"/>
+        <text x="50" y="36" text-anchor="middle" font-family="Libre Baskerville" font-size="28" font-weight="700" fill="#b08d3e">2</text>
+        <text x="50" y="54" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#8e8e93">PULL &amp; INSERT</text>
+        <text x="50" y="100" text-anchor="middle" font-family="Noto Sans KR" font-size="12" font-weight="600" fill="#2c2c2e">귀 당기며 삽입</text>
+        <text x="50" y="118" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">반대쪽 손으로 귓바퀴를</text>
+        <text x="50" y="132" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">위로 당기며 깊이 삽입</text>
+      </g>
+      <!-- Arrow -->
+      <text x="440" y="92" font-family="Noto Sans KR" font-size="20" fill="#d4d4d4">→</text>
+      <!-- Step 3 -->
+      <g transform="translate(480,50)">
+        <circle cx="50" cy="40" r="36" fill="#f5edd6" stroke="#b08d3e" stroke-width="1.5"/>
+        <text x="50" y="36" text-anchor="middle" font-family="Libre Baskerville" font-size="28" font-weight="700" fill="#b08d3e">3</text>
+        <text x="50" y="54" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#8e8e93">HOLD</text>
+        <text x="50" y="100" text-anchor="middle" font-family="Noto Sans KR" font-size="12" font-weight="600" fill="#2c2c2e">30초 유지</text>
+        <text x="50" y="118" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">손가락으로 눌러</text>
+        <text x="50" y="132" text-anchor="middle" font-family="Noto Sans KR" font-size="10.5" fill="#8e8e93">팽창될 때까지 고정</text>
+      </g>
+    </svg>
+    <figcaption>올바르게 착용하면 NRR 수치에 가까운 차음 효과를 얻을 수 있습니다</figcaption>
+  </figure>
+
+  <p>"귀마개를 껴봤는데 별로던데?" 하는 분 대부분은 <strong>1단계(충분히 얇게 말기)를 건너뛰고 그대로 귀에 밀어넣는 경우</strong>입니다. 충분히 가늘게 말아서, 귓바퀴를 위로 당긴 상태에서 깊이 넣어야 제 성능이 나옵니다.</p>
+
+  <div class="sep">· · ·</div>
+
+  <h2>장단점 — 솔직한 정리</h2>
+  <div class="pros-cons">
+    <div class="pros-box"><h5>폼 귀마개의 장점</h5>
+      <ul>
+        <li>가격이 저렴 (개당 100~300원대)</li>
+        <li>차음 성능이 실리콘·이어폰보다 우수</li>
+        <li>전자기기 없이 어디서든 사용 가능</li>
+        <li>시험장 반입 가능 (전자기기 X)</li>
+        <li>가벼워서 장시간 착용 부담 적음</li>
+      </ul>
+    </div>
+    <div class="cons-box"><h5>단점 및 주의점</h5>
+      <ul>
+        <li>소모품 — 복원력 저하 시 교체 필요</li>
+        <li>착용 적응 기간이 필요 (1~2주)</li>
+        <li>귀 크기에 안 맞으면 불편하거나 아픔</li>
+        <li>위생 관리 — 손 씻고 착용 권장</li>
+        <li>자기 목소리가 울려 들리는 폐쇄감</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>수험생을 위한 실전 팁</h2>
+  <div class="tip-box">
+    <h4>시험 전 반드시 연습하세요</h4>
+    <p>귀마개를 처음 끼면 머리가 멍하거나 숨이 막히는 느낌이 들 수 있습니다. 이건 자연스러운 적응 과정입니다. 수능이나 자격증 시험에서 처음 쓰면 오히려 집중을 방해할 수 있으니, 시험 최소 한 달 전부터 공부할 때 습관적으로 착용해보세요.</p>
+    <ul>
+      <li>소모품이므로 한 번에 10~20쌍 이상 구매하는 것이 경제적</li>
+      <li>여러 모델을 소량씩 구매해서 자기 귀에 맞는 것을 먼저 찾기</li>
+      <li>사용 전 반드시 손을 씻어 귓속 감염을 예방</li>
+      <li>하루 사용 후 새 것으로 교체하는 것이 위생적</li>
+    </ul>
+  </div>
+
+  <div class="sep">· · ·</div>
+
+  <h2>귀 크기별·상황별 추천 정리</h2>
+  <p>결론적으로, 수험생 귀마개 선택의 핵심은 <strong>"내 귀에 편안하게 맞는 것"</strong>을 찾는 과정입니다. 차음률 숫자만 보고 고르면 실패합니다. 아래 추천을 참고하되, 가능하면 2~3가지를 소량씩 구매해 직접 비교해보세요.</p>
+
+  <div class="mini-table"><table><thead><tr><th>상황</th><th>추천 모델</th><th>이유</th></tr></thead><tbody>
+    <tr class="pick"><td><strong>귀 작은 분</strong></td><td>몰덱스 슬림핏</td><td>유일한 소형 사이즈, 압박 적음</td></tr>
+    <tr><td><strong>장시간 (8h+)</strong></td><td>몰덱스 울트라소프트</td><td>가장 부드러운 재질, 체온 밀착</td></tr>
+    <tr><td><strong>소음 심한 환경</strong></td><td>몰덱스 스파크플러그</td><td>높은 NRR + 좋은 밀착력</td></tr>
+    <tr><td><strong>처음 시도</strong></td><td>여러 종류 샘플팩</td><td>소량씩 구매해 비교 후 결정</td></tr>
+    <tr><td><strong>가성비 대량구매</strong></td><td>3M 이어소프트</td><td>낱개 가격 저렴, 쉽게 구매</td></tr>
+  </tbody></table></div>
+
+  <!-- ★★★ 결론 배너 ★★★ -->
+  <div class="verdict-banner">
+    <h3>정리: 첫 귀마개로는 몰덱스 슬림핏,<br>장시간이라면 울트라소프트</h3>
+    <p>차음률 숫자보다 중요한 건 내 귀에 맞는 착용감. 소모품이니 부담 없이 여러 개 시도해보세요.</p>
+    <div class="verdict-buttons">
+      <a href="YOUR_COUPANG_PARTNERS_LINK_1" class="btn-coupang" target="_blank" rel="noopener noreferrer">몰덱스 슬림핏 보기</a>
+      <a href="YOUR_COUPANG_PARTNERS_LINK_2" class="btn-coupang btn-outline" target="_blank" rel="noopener noreferrer">몰덱스 울트라소프트 보기</a>
+      <a href="YOUR_COUPANG_PARTNERS_LINK_3" class="btn-coupang btn-outline" target="_blank" rel="noopener noreferrer">스파크플러그 보기</a>
+    </div>
+  </div>
+
+</article>
+
+<footer class="footer-area">
+  <div class="footer-disclosure-box">
+    <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br>
+    위 글에 포함된 링크를 통해 구매가 이루어지면, 필자에게 일정 수수료가 지급됩니다. 상품 가격에는 영향이 없습니다. 리뷰 내용은 실제 사용 경험과 커뮤니티 후기를 기반으로 작성되었으며, 특정 상품의 의료적 효과를 보증하지 않습니다.
+  </div>
+</footer>
+
+</body>
+</html>

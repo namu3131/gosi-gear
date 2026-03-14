@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고시생 필수템 리뷰 — 합격을 위한 도구들</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#faf9f6;--bg-warm:#f4f1eb;--bg-dark:#1c1c1e;--text-body:#2c2c2e;--text-secondary:#636366;--text-caption:#8e8e93;--text-light:#aeaeb2;--border:#e5e5e7;--border-light:#f0efec;--accent:#3a3a3c}
+  *{margin:0;padding:0;box-sizing:border-box}html{font-size:17px}
+  body{font-family:'Noto Sans KR',-apple-system,sans-serif;background:var(--bg);color:var(--text-body);-webkit-font-smoothing:antialiased;line-height:1.8}
+
+  /* ── 헤더 ── */
+  .site-header{max-width:800px;margin:0 auto;padding:80px 24px 48px;text-align:center}
+  .site-logo{font-family:'Libre Baskerville',serif;font-size:14px;font-style:italic;color:var(--text-caption);letter-spacing:.15em;text-transform:uppercase;margin-bottom:32px}
+  .site-title{font-family:'Noto Serif KR',serif;font-size:clamp(28px,5vw,42px);font-weight:900;line-height:1.35;margin-bottom:20px;word-break:keep-all}
+  .site-desc{font-size:16px;color:var(--text-secondary);line-height:1.8;font-weight:300;max-width:520px;margin:0 auto;word-break:keep-all}
+
+  /* ── 구분선 ── */
+  .divider{text-align:center;margin:40px 0;color:var(--text-light);font-size:18px;letter-spacing:.5em}
+
+  /* ── 리뷰 카드 목록 ── */
+  .reviews{max-width:720px;margin:0 auto;padding:0 24px 80px}
+  .review-card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:28px;transition:all .3s}
+  .review-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.07);transform:translateY(-2px)}
+
+  .review-card-hero{width:100%;height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .review-card-hero h3{font-family:'Libre Baskerville',serif;font-size:clamp(28px,5vw,44px);font-weight:700;font-style:italic;color:#fff;opacity:.85;position:relative;z-index:2}
+  .review-card-hero p{position:absolute;bottom:14px;right:20px;font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.15em;text-transform:uppercase;z-index:2}
+
+  .hero-jetstream{background:linear-gradient(135deg,#1a1a2e,#16213e 50%,#0f3460)}
+  .hero-bookstand{background:linear-gradient(135deg,#1a2e1a,#1e3a2a 50%,#2d4a3a)}
+  .hero-earplug{background:linear-gradient(135deg,#2d2418,#4a3728 50%,#3d2e1f)}
+
+  .review-card-body{padding:24px 28px}
+  .review-card-category{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:12px;margin-bottom:12px}
+  .cat-pen{color:#b44a2d;background:#f0e0d8}
+  .cat-desk{color:#2d6a4f;background:#d8f0e0}
+  .cat-ear{color:#b08d3e;background:#f5edd6}
+
+  .review-card-title{font-family:'Noto Serif KR',serif;font-size:20px;font-weight:700;line-height:1.45;margin-bottom:8px;word-break:keep-all}
+  .review-card-excerpt{font-size:14px;color:var(--text-secondary);line-height:1.75;word-break:keep-all}
+  .review-card-meta{margin-top:16px;font-size:12px;color:var(--text-caption);display:flex;gap:12px}
+
+  /* ── 하단 ── */
+  .site-footer{max-width:720px;margin:0 auto;padding:0 24px 60px;text-align:center}
+  .footer-disclosure{background:var(--bg-warm);border:1px solid var(--border);border-radius:6px;padding:20px 24px;font-size:12px;color:var(--text-caption);line-height:1.8;text-align:left}
+  .footer-disclosure strong{color:var(--text-secondary)}
+  .footer-copy{margin-top:24px;font-size:12px;color:var(--text-light)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <p class="site-logo">Study Essentials</p>
+  <h1 class="site-title">고시생 필수템 리뷰</h1>
+  <p class="site-desc">합격까지 함께할 도구들을 직접 써보고 솔직하게 정리합니다. 볼펜부터 독서대, 귀마개까지 — 수험 생활의 디테일을 챙기세요.</p>
+</header>
+
+<div class="divider">· · ·</div>
+
+<section class="reviews">
+
+  <!-- 리뷰 1: 제트스트림 -->
+  <a href="jetstream-review.html" class="review-card">
+    <div class="review-card-hero hero-jetstream">
+      <h3>Jetstream</h3>
+      <p>uni by Mitsubishi Pencil</p>
+    </div>
+    <div class="review-card-body">
+      <span class="review-card-category cat-pen">문구 리뷰</span>
+      <h2 class="review-card-title">고시생 볼펜의 정석, 유니 제트스트림 — 왜 다들 이 볼펜을 쓸까?</h2>
+      <p class="review-card-excerpt">수험 서적 옆에 항상 놓여있는 그 볼펜. 20년 가까이 고시생의 손끝을 책임져 온 제트스트림을 직접 써보고 솔직하게 정리했습니다.</p>
+      <div class="review-card-meta"><span>2026. 3. 14</span><span>읽는 시간 약 8분</span></div>
+    </div>
+  </a>
+
+  <!-- 리뷰 2: 독서대 -->
+  <a href="bookstand-review.html" class="review-card">
+    <div class="review-card-hero hero-bookstand">
+      <h3>Book Stand</h3>
+      <p>Focus on Posture</p>
+    </div>
+    <div class="review-card-body">
+      <span class="review-card-category cat-desk">학습 환경 리뷰</span>
+      <h2 class="review-card-title">고시생 독서대, 정말 필요할까? — 유형별 비교와 선택 가이드</h2>
+      <p class="review-card-excerpt">하루 10시간 이상 책상에 앉아 있는 수험생에게 독서대는 사치가 아니라 투자입니다. 네 가지 유형을 비교하고 상황별 추천을 정리했습니다.</p>
+      <div class="review-card-meta"><span>2026. 3. 14</span><span>읽는 시간 약 8분</span></div>
+    </div>
+  </a>
+
+  <!-- 리뷰 3: 귀마개 -->
+  <a href="earplug-review.html" class="review-card">
+    <div class="review-card-hero hero-earplug">
+      <h3>Silence</h3>
+      <p>Moldex Ear Plugs</p>
+    </div>
+    <div class="review-card-body">
+      <span class="review-card-category cat-ear">학습 환경 리뷰</span>
+      <h2 class="review-card-title">고시생 귀마개의 종착역, 몰덱스 — 착용감과 차음 사이에서</h2>
+      <p class="review-card-excerpt">귀마개에만 20만원 쓴 수험생들이 결국 도착하는 곳. 몰덱스 라인업을 직접 비교하고, 귀 크기·사용 환경별 선택 가이드를 정리했습니다.</p>
+      <div class="review-card-meta"><span>2026. 3. 14</span><span>읽는 시간 약 8분</span></div>
+    </div>
+  </a>
+
+</section>
+
+<footer class="site-footer">
+  <div class="footer-disclosure">
+    <strong>이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br>
+    각 리뷰에 포함된 링크를 통해 구매가 이루어지면 필자에게 일정 수수료가 지급됩니다. 상품 가격에는 영향이 없습니다.
+  </div>
+  <p class="footer-copy">&copy; 2026 고시생 필수템 리뷰</p>
+</footer>
+
+</body>
+</html>
