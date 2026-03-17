@@ -104,9 +104,35 @@ gtag('config', 'G-DZKGMN29VB');
   .btn-outline{background:transparent!important;border:1px solid rgba(255,255,255,.25);color:#fff!important}.btn-outline:hover{background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.45);box-shadow:none!important}
   .footer-area{max-width:680px;margin:0 auto;padding:0 24px 60px}
   .footer-disclosure-box{background:var(--bg-warm);border:1px solid var(--border);border-radius:6px;padding:20px 24px;font-size:12px;color:var(--text-caption);line-height:1.8}.footer-disclosure-box strong{color:var(--text-secondary)}
+
+  /* ── 로그인 네비게이션 ── */
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .topbar-inner{max-width:980px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .topbar-brand{font-size:14px;font-weight:700;color:var(--text-body);text-decoration:none;letter-spacing:-.02em}
+  .topbar-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .topbar-link,.topbar-btn{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s ease;border:1px solid var(--border);background:#fff;color:var(--text-body);cursor:pointer}
+  .topbar-link:hover,.topbar-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+  .topbar-btn.primary,.topbar-link.primary{background:var(--text-body);color:#fff;border-color:var(--text-body)}
+  .topbar-user{font-size:13px;color:var(--text-secondary);margin-right:2px;max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  @media (max-width:640px){.topbar-inner{padding:10px 16px}.topbar-user{display:none}}
+
 </style>
 </head>
 <body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="index.html">고시생 필수템 리뷰</a>
+    <div class="topbar-nav" id="auth-nav">
+      <span class="topbar-user" id="auth-user-email" hidden></span>
+      <a class="topbar-link" href="index.html">홈</a>
+      <a class="topbar-link" href="mypage.html" id="mypage-link">마이페이지</a>
+      <a class="topbar-link" href="login.html" id="login-link">로그인</a>
+      <button class="topbar-btn primary" type="button" id="logout-button" hidden>로그아웃</button>
+    </div>
+  </div>
+</div>
+
 <div class="ad-disclosure-top"><strong>[광고]</strong> 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
 
 <header class="article-header">
@@ -250,5 +276,10 @@ gtag('config', 'G-DZKGMN29VB');
     리뷰에 포함된 의견은 필자 개인의 사용 경험을 바탕으로 작성되었습니다.
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+
 </body>
 </html>
